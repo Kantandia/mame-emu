@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="assets/styles.css">
+</head>
+<style>
+	.body {
+		width: 70%;
+		height: 100%;
+		background-color: rgb(22, 22, 22);
+		margin: auto;
+	}
+
+	p {
+		font-size: 12px;
+		text-align: left;
+		text-shadow: 3px 1px black;
+		
+	}
+
+	select {
+		width: 200px;
+		height: 20px;
+		border: 0px;
+		font-family: "80s";
+		color: white;
+		background-image: linear-gradient(to top right, midnightblue 30%, cyan);
+	}
+
+	option {
+		background-color: midnightblue;
+	}
+
+	#filter {
+		margin-top: 5px;
+		margin-left: 5px;
+		margin-bottom: 5px;
+	}
+
+	#time {
+		float: right;
+		margin-top: 5px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+
+	#grid {
+		columns: 4;
+		column-gap: 10px;
+		margin: 20px 20px;
+	}
+
+	.thumbnail {
+		margin: 0 0 20px;
+		background-image: linear-gradient(to top left, purple, black, blue);
+		padding: 4px;
+		border: solid white 1px;
+		border-radius: 10px;
+		break-inside: avoid;
+	}
+
+	.thumbnail img {
+		max-width: 100%;
+	}
+</style>
+
+<body>
+	<div class="body">
+		<select name="Filter" id="filter">
+			<option value="all">All</option>
+			<option value="fighting">Fighting</option>
+			<option value="shoot">Shoot 'em Ups</option>
+			<option value="racing">Racing</option>
+			<option value="fps">FPS</option>
+		</select>
+		<select name="Time" id="time">
+			<option value="alltime">All Time</option>
+			<option value="90s">90s</option>
+			<option value="80s">80s</option>
+			<option value="80s">70s</option>
+		</select>
+
+		<div id="grid">
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, ex eveniet non inventore optiomagni? Doloribus aliquid corrupti id perferendis!</p>
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, nemo?</p>
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo voluptatem, ipsa necessitatibus, iure praesentium laborum excepturi quasi facere modi qui reiciendis est vitae, molestias alias repudiandae ex obcaecati dicta assumenda?</p>
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magnam, velit, culpa delectus neque saepe veritatis eos quisquam impedit dolorem asperiores quasi quam cupiditate ratione quia tenetur. Possimus, accusamus temporibus.</p>
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, facilis qui accusantium obcaecati voluptatibus explicabo nam neque quaerat vel doloribus?</p>
+			</div>
+		</div>
+</body>
+
+</html>
