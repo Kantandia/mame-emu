@@ -34,16 +34,20 @@ var API = {
 var refreshDrinks = function() {
   API.getDrinks().then(function(data) {
     var $drinks = data.map(function(drink) {
-      var $a = $("<a>")
+      var $a = $("<p>")
         .text(drink.text)
         .attr("href", "/drink/" + drink.id);
-
-      var $li = $("<li>")
+      
+      var $p = $("<span>")
+        .text("Qty: " +drink.description)
+        .attr("href", "/example/" +drink.id);  
+      
+        var $li = $("<li>")
         .attr({
           class: "list-group-item",
           "data-id": drink.id
         })
-        .append($a);
+        .append($a, $p);
 
       var $button = $("<button>")
         .addClass("btn btn-danger float-right delete")
