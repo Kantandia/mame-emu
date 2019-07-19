@@ -1,34 +1,39 @@
-.list-group-item {
-    line-height: 2.5;
-}
-html {
-    background: url("reee.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;;
-}
+
 @font-face {
     font-family: "80s";
     src: url("PressStart2P.ttf");
     font-weight: normal;
-}
-#sash {
-    width: 20%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 10%;
-    background-color: black;
-}
-  
-.homebtn {
-    width: 100%;
-    height: 10%;
+  }
+  p, h1, h3, h4, h5 {
     color: white;
-    background-image: linear-gradient(to top left, purple, black, blue);
-    border: 0;
-    margin-bottom: 5px; 
+    text-align: center;
     font-family: "80s";
-    font-size: 25px;
-}
+  }
+  .card-text {
+    color:rgb(177, 177, 177);
+  }
+  .drinkorderbody {
+    background-color: black;
+    background-image: linear-gradient(to top left, purple, black, blue);
+  }
+  .card-title {
+    color: white;
+  }
+  .row {
+    columns: 4;
+    column-gap: 10px;
+  }
+  .card-body {
+    background-image: linear-gradient(to top left, purple, black, blue);
+    
+  }
+  .list-group {
+    color: black;
+  }
+  #ordered-drinks {
+    color: black;
+  }
+  h2 {
+    color: black;
+    font-size: 20px;
+  }
