@@ -36,11 +36,11 @@ var refreshDrinks = function() {
     var $drinks = data.map(function(drink) {
       var $a = $("<p>")
         .text(drink.text)
-        .attr("href", "/drink/" + drink.id);
+        //.attr("href", "/drink/" + drink.id);
       
       var $p = $("<span>")
         .text("Qty: " +drink.description)
-        .attr("href", "/example/" +drink.id);  
+        //.attr("href", "/drink/" +drink.id);  
       
         var $li = $("<li>")
         .attr({
