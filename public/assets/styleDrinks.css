@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: "80s";
+    src: url("PressStart2P.ttf");
+    font-weight: normal;
+  }
+  p, h1, h3, h4, h5 {
+    color: white;
+    text-align: center;
+    font-family: "80s";
+  }
+  .card-text {
+    color:rgb(177, 177, 177);
+  }
+  .drinkorderbody {
+    background-color: black;
+    background-image: linear-gradient(to top left, purple, black, blue);
+  }
+  .card-title {
+    color: white;
+  }
+  .row {
+    columns: 4;
+    column-gap: 10px;
+  }
+  .card-body {
+    background-image: linear-gradient(to top left, purple, black, blue);
+    
+  }
+  .list-group {
+    color: black;
+  }
+  #ordered-drinks {
+    color: black;
+  }
+  h2 {
+    color: black;
+    font-size: 20px;
+  }

@@ -19,7 +19,7 @@ module.exports = function(app) {
   app.get("/drink/:id", function(req, res) {
     db.Drink.findOne({ where: { id: req.params.id } }).then(function(dbDrink) {
       res.render("drink", {
-        drink: dbDrink
+        drink: dbDrinks
       });
     });
   });
