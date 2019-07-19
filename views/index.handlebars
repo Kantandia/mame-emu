@@ -3,31 +3,515 @@
     <div class="row">
       <div class="col-8 offset-2">
         <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
+        <h2>Order your favourite drinks!</h2>
+      </div>
+    </div> 
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section" style="max-width: 540px;">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <img src="./assets/drinks/drink-1.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Hopsoulution Double IPA</h5>
+                  <p class="card-text">A remarkably drinkable Double IPA that pays tribute to one of Mother Nature’s finest creations, as several hop varietals combine for massive aromas of tropical fruit, citrus and pine. A mild caramel malt character and dry finish provide balance.</p>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <form class="clearfix mb-4" action="POST">
+            <div class="form-group">
+              <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+                <option selected>Select</option>
+                <option value="Hopsoulution Double IPA">Hopsoulution Double IPA</option>
+              </select>
+              <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+                <option selected>Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <button class="submit btn btn-primary">Place Order</button>
+            </div>    
+          </form>    
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="section" style="max-width: 540px;">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+              <img src="./assets/drinks/drink-2.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title">Two Hearted Ale American IPA</h5>
+                <p class="card-text">Brewed with 100% Centennial hops from the Pacific Northwest and named after the Two Hearted River in Michigan’s Upper Peninsula, this IPA is bursting with hop aromas ranging from pine to grapefruit from massive hop additions in both the kettle and the fermenter.</p>
+              </div>
+            </div>
+          </div>
+        </div>  
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
+            <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+              <option selected>Select</option>
+              <option value="Two Hearted Ale American IPA">Two Hearted Ale American IPA</option>
+            </select>
+            <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+              <option selected>Quantity</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <button class="submit btn btn-primary">Place Order</button>
+          </div>    
+        </form>    
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section" style="max-width: 560px;">
+          <div class="card mb-3" style="max-width: 560px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <img src="./assets/drinks/drink-3.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Oberon Ale Wheat Beer</h5>
+                  <p class="card-text">Bell's Oberon is a wheat ale fermented with Bell's signature house ale yeast, mixing a spicy hop character with mildly fruity aromas. The addition of wheat malt lends a smooth mouthfeel, making it a classic summer beer.</p>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <form class="clearfix mb-4" action="POST">
+            <div class="form-group">
+              <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+                <option selected>Select</option>
+                <option value="Oberon Ale Wheat Beer">Oberon Ale Wheat Beer</option>
+              </select>
+              <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+                <option selected>Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <button class="submit btn btn-primary">Place Order</button>
+            </div>    
+          </form>    
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="section" style="max-width: 540px;">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+              <img src="./assets/drinks/drink-4.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title">Tripel Karmeliet Belgian</h5>
+                <p class="card-text">Tripel Karmeliet is still brewed to an authentic beer recipe from 1679 originating in the former Carmelite monastery in Dendermonde. Written over 300 years ago, this recipe describes the use of three kinds of grain: wheat, oats and barley.</p>
+              </div>
+            </div>
           </div>
+        </div>  
+        <form class="clearfix mb-4" action="POST">
           <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
+            <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+              <option selected>Select</option>
+              <option value="Tripel Karmeliet Belgian">Tripel Karmeliet Belgian</option>
+            </select>
+            <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+                <option selected>Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button class="submit btn btn-primary">Place Order</button>
+          </div>    
+        </form>    
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section" style="max-width: 580px;">
+          <div class="card mb-3" style="max-width: 580px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <img src="./assets/drinks/drink-5.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">OGoses Are Red Rosé Gose</h5>
+                  <p class="card-text">This is a rosé - and a gose - by any other name. Goses are Red is a stylish funky, crisp and tart gose ale inspired by the soft sweetness of a rosé wine.</p>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <form class="clearfix mb-4" action="POST">
+            <div class="form-group">
+              <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+                <option selected>Select</option>
+                <option value="OGoses Are Red Rosé Gose">OGoses Are Red Rosé Gose</option>
+              </select>
+              <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+                <option selected>Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <button class="submit btn btn-primary">Place Order</button>
+            </div>    
+          </form>    
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="section" style="max-width: 540px;">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+              <img src="./assets/drinks/drink-6.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title">Raison D'Extra Belgian Strong</h5>
+                <p class="card-text">A bigger, bolder version of our Raison D'Etre. This is a bulbous brown ale brewed with a bunch of malt, brown sugar and raisins.</p>
+              </div>
+            </div>
           </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
+        </div>  
+        <form class="clearfix mb-4" action="POST">
+          <div class="form-group">
+            <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+              <option selected>Select</option>
+              <option value="Raison D'Extra Belgian Strong">Raison D'Extra Belgian Strong</option>
+            </select>
+            <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+                <option selected>Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button class="submit btn btn-primary">Place Order</button>
+          </div>    
+        </form>    
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section" style="max-width: 600px;">
+          <div class="card mb-3" style="max-width: 600px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <img src="./assets/drinks/drink-7.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Maple Parabola Imperial Stout</h5>
+                  <p class="card-text">Our classic Parabola that had maple syrup added to the whirlpool & then aged in retired maple bourbon barrels for six months. The result is soft & velvety with notes of vanilla, dark chocolate.</p>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <form class="clearfix mb-4" action="POST">
+            <div class="form-group">
+              <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+                <option selected>Select</option>
+                <option value="Maple Parabola Imperial Stout">Maple Parabola Imperial Stout</option>
+              </select>
+              <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+                <option selected>Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <button class="submit btn btn-primary">Place Order</button>
+            </div>    
+          </form>    
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="section" style="max-width: 540px;">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+              <img src="./assets/drinks/drink-8.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title">Nitro Merlin Stout - Milk / Sweet</h5>
+                <p class="card-text">The new ingredient is lactose, a.k.a. milk sugar. When Velvet Merlin is brewed with milk sugar to create Nitro Merlin Milk Stout, the effect is similar to adding cream to your dark roasted coffee.</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <form class="clearfix mb-4" action="POST">
+          <div class="form-group">
+            <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+              <option selected>Select</option>
+              <option value="Nitro Merlin Stout - Milk / Sweet">Nitro Merlin Stout - Milk / Sweet</option>
+            </select>
+            <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+                <option selected>Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button class="submit btn btn-primary">Place Order</button>
+          </div>    
+        </form>    
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section" style="max-width: 620px;">
+          <div class="card mb-3" style="max-width: 620px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <img src="./assets/drinks/drink-9.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Backwoods Bastard Scotch Ale</h5>
+                  <p class="card-text">Expect lovely, warm smells of single malt scotch, oaky bourbon barrels, smoke, sweet caramel and roasted malts. It’s a kick-back sipper made to excite the palate.</p>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <form class="clearfix mb-4" action="POST">
+            <div class="form-group">
+              <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+                <option selected>Select</option>
+                <option value="Backwoods Bastard Scotch Ale">Backwoods Bastard Scotch Ale</option>
+              </select>
+              <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+                <option selected>Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <button class="submit btn btn-primary">Place Order</button>
+            </div>    
+          </form>    
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="section" style="max-width: 540px;">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+              <img src="./assets/drinks/drink-10.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title">Curmudgeon Old Ale</h5>
+                <p class="card-text">Brewed with molasses and a focus on malts, then oak-aged. The result is a strong, rich delight that’s deceptively smooth and drinkable.</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <form class="clearfix mb-4" action="POST">
+          <div class="form-group">
+            <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+              <option selected>Select</option>
+              <option value="Curmudgeon Old Ale">Curmudgeon Old Ale</option>
+            </select>
+            <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+                <option selected>Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button class="submit btn btn-primary">Place Order</button>
+          </div>    
+        </form>    
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section" style="max-width: 640px;">
+          <div class="card mb-3" style="max-width: 640px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <img src="./assets/drinks/drink-11.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">White Witbier</h5>
+                  <p class="card-text">Rooted in Belgian tradition, this refreshing wheat ale, or witbier, is our interpretation of a classic style. Its hazy pale color and creamy white head result from the ample amounts of wheat used in the recipe. The addition of raw oats contributes to a smooth mouthfeel while the Belgian yeast imparts a complex yet dry finish.</p>
+                </div>
+              </div>
+            </div>
+          </div>  
+          <form class="clearfix mb-4" action="POST">
+            <div class="form-group">
+              <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+                <option selected>Select</option>
+                <option value="White Witbier">White Witbier</option>
+              </select>
+              <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+                <option selected>Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <button class="submit btn btn-primary">Place Order</button>
+            </div>    
+          </form>    
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="section" style="max-width: 540px;">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+              <img src="./assets/drinks/drink-12.jpeg" class="card-img" alt="drink-image" style="margin-top:24px; margin-bottom:10px;">
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title">Milk Stout Nitro Stout</h5>
+                <p class="card-text">POUR HARD! Dark & delicious, America’s milk stout will change your perception about what a stout can be. Pouring hard out of the bottle, Milk Stout Nitro cascades beautifully, building a tight, thick head like hard whipped cream. The aroma is of brown sugar and vanilla cream, with hints of roasted coffee.</p>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <form class="clearfix mb-4" action="POST">
+          <div class="form-group">
+            <select class="custom-select mr-sm-2" id="drink-text" style="margin-bottom: 10px">
+              <option selected>Select</option>
+              <option value="Milk Stout Nitro Stout">Milk Stout Nitro Stout</option>
+            </select>
+            <select class="custom-select mr-sm-2" id="drink-description" style="margin-bottom: 10px">
+                <option selected>Quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button class="submit btn btn-primary">Place Order</button>
+          </div>    
+        </form>    
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Drinks Ordered:</h3>
+        <ul id="drink-list" class="list-group">
+          {{#each drinks}}
+            <li data-id="{{this.id}}" class="list-group-item">
+              <p>{{this.text}} </p>
+              <span>Qty: {{this.description}} </span> 
+              <button class="btn btn-danger float-right delete">ｘ</button>
+            </li>
           {{/each}}
         </ul>
-      </div>
+      </div>  
     </div>
   </div>
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
+
