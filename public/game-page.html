@@ -71,11 +71,40 @@
         #bar {
             transform: translate(240px, -340px);
         }
-        /* .joystick {
+        .joystick {
             width: 50px;
             height: 60px;
-        } */
+		    cursor: pointer;
+        }
+        #ctrlbtn {
+            transform: translate(190px, -460px);
+        }
+        #offbtn {
+            transform: translate(192px, -460px);
+        }
+        #ldrbtn {
+            transform: translate(195px, -460px);
+        }
+        .innerbtn {
+            width: 35px;
+            height: 35px;
+            border-radius: 150px;
+    		cursor: pointer;
+        }
+        #rcdbtn {
+            transform: translate(477px, -490px);
+        }
+        #hmbtn {
+            transform: translate(372px, -450px);
+        }
+        #brbtn {
+            transform: translate(426px, -435px);
+            width: 45px;
+            height: 45px;
+        }
+        button:focus {outline:0;}
     </style>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -94,13 +123,34 @@
                 <h4 id="arcade">ARCADE</h4>
                 <h4 id="home">HOME PAGE</h4>
                 <h4 id="bar">BAR</h4>
-            <!-- <button class="joystick"></button>
-            <button class="joystick"></button>
-            <button></button>
-            <button></button>
-            <button></button>
-        </div> -->
+            <button class="joystick" id="ctrlbtn" onclick="ctrl()"></button>
+            <button class="joystick" id="offbtn" onclick="off()"></button>
+            <button class="joystick" id="ldrbtn" onclick="leader()"></button>
+            <button class="innerbtn" id="rcdbtn" onclick="arcade()"></button>
+            <button class="innerbtn" id="hmbtn" onclick="home()"></button>
+            <button class="innerbtn" id="brbtn" onclick="bar()"></button>
+        </div>
     </div>
+    <script>
+        function ctrl(){
+            console.log("It just works");
+        };
+        function off(){
+            console.log("It just works");
+        };
+        function leader(){
+            console.log("It just works");
+        };
+        function arcade(){
+            console.log("It just works");
+        };
+        function home(){
+            console.log("It just works");
+        };
+        function bar(){
+            console.log("It just works");
+        };
+    </script>
 </body>
 
 </html>
