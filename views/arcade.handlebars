@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="assets/styles.css">
+	<link rel="icon" href="assets/logo2.png">
+</head>
+<style>
+	.body {
+		width: 70%;
+		background-color: rgb(22, 22, 22);
+		margin: auto;
+		padding-bottom: 10px;
+	}
+
+	p {
+		font-size: 12px;
+		text-align: left;
+		text-shadow: 3px 1px black;
+
+	}
+
+	select {
+		width: 200px;
+		height: 20px;
+		border: 0px;
+		font-family: "80s";
+		color: white;
+		background-image: linear-gradient(to top right, midnightblue 30%, cyan);
+	}
+
+	option {
+		background-color: midnightblue;
+	}
+
+	#filter {
+		margin-top: 5px;
+		margin-left: 5px;
+		margin-bottom: 5px;
+	}
+
+	#time {
+		float: right;
+		margin-top: 5px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+
+	#grid {
+		columns: 4;
+		column-gap: 10px;
+		margin: 20px 20px;
+	}
+
+	.thumbnail {
+		margin: 0 0 20px;
+		background-image: linear-gradient(to top left, purple, black, blue);
+		padding: 9px;
+		border: solid white 1px;
+		border-radius: 10px;
+		break-inside: avoid;
+		cursor: pointer;
+	}
+
+	.thumbnail:active {
+		border: 0;
+	}
+
+	.thumbnail img {
+		max-width: 100%;
+		min-width: 100%;
+		max-height: 180px;
+		min-height: 180px;
+	}
+
+	.tags {
+		max-width: 100%;
+		columns: 2;
+	}
+
+	.tags h6 {
+		margin: 0;
+	}
+</style>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+<body>
+	<div class="body">
+		<select name="Filter" id="filter">
+			<option value="">All</option>
+			<option value="fighting">Fighting</option>
+			<option value="shoot">Shoot 'em Ups</option>
+			<option value="racing">Racing</option>
+			<option value="puzzle">Puzzle</option>
+			<option value="platform">Platformer</option>
+		</select>
+		<select name="Time" id="time">
+			<option value="">All Time</option>
+			<option value="90s">90s</option>
+			<option value="80s">80s</option>
+			<option value="70s">70s</option>
+		</select>
+
+		<div id="grid">
+			<div class="thumbnail" id="galaga" data-tags="shoot 80s">
+				<img src="assets/images/galaga.jpg" alt="img">
+				<h3>Galaga</h3>
+				<div class="tags">
+					<h6>Shoot 'em Up</h6>
+					<h6>80s</h6>
+				</div>
+				<p>Controlling a starship, the player is tasked with destroying the Galaga forces in each stage while
+					avoiding enemies and projectiles. Some enemies can capture a player’s ship via a tractor beam, which
+					can be rescued to transform the player into a “duel fighter” with additional firepower.</p>
+				<param class="filter" name="Filter" value="shoot">
+				<param class="time" name="Time" value="80s">
+			</div>
+			<div class="thumbnail" id="space-invaders" data-tags="shoot 70s">
+				<img src="assets/images/spaceinvaders.jpg" alt="img">
+				<h3>Space Invaders</h3>
+				<div class="tags">
+					<h6>Shoot 'em Up</h6>
+					<h6>70s</h6>
+				</div>
+				<p>The goal is to defeat wave after wave of descending aliens with a horizontally moving laser to earn
+					as many points as possible.</p>
+				<param class="filter" name="Filter" value="shoot">
+				<param class="time" name="Time" value="70s">
+			</div>
+			<div class="thumbnail" id="pac-man" data-tags="puzzle 80s">
+				<img src="assets/images/pacman.jpg" alt="img">
+				<h3>Pac Man</h3>
+				<div class="tags">
+					<h6>Puzzle</h6>
+					<h6>80s</h6>
+				</div>
+				<p>The player controls the titular character, as he must eat all the dots inside an enclosed maze while
+					avoiding four colored ghosts. Eating large flashing "Power Pellets" will cause the ghosts to turn
+					blue and reverse direction, allowing Pac-Man to eat them for bonus points.</p>
+				<param class="filter" name="Filter" value="platform">
+				<param class="time" name="Time" value="80s">
+			</div>
+			<div class="thumbnail" id="streetfighter" data-tags="fighting 80s">
+				<img src="assets/images/stftr.jpg" alt="img">
+				<h3>Street Fighter</h3>
+				<div class="tags">
+					<h6>Fighting</h6>
+					<h6>80s</h6>
+				</div>
+				<p>The player competes in a series of one-on-one matches against a series of computer-controlled
+					opponents or in a single match against another player. Each match consists of three rounds in which
+					the player must knock out an opponent in less than 30 seconds. If a match ends before a fighter is
+					knocked out, then the fighter with the greater amount of energy left will be declared the round's
+					winner. The player must win two rounds in order to defeat the opponent and proceed to the next
+					battle. If the third round ends in a tie, then the computer-controlled opponent will win by default
+					or both players will lose. During the single-player mode, the player can continue after losing and
+					fight against the opponent they lost the match to. Likewise, a second player can interrupt a
+					single-player match and challenge the first player to a new match.</p>
+				<param class="filter" name="Filter" value="fighting">
+				<param class="time" name="Time" value="80s">
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<div class="tags">
+					<h6></h6>
+					<h6></h6>
+				</div>
+				<p>Lorem ipsum dolor sit amet.</p>
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<div class="tags">
+					<h6></h6>
+					<h6></h6>
+				</div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magnam, velit, culpa delectus neque
+					saepe veritatis eos quisquam impedit dolorem asperiores quasi quam cupiditate ratione quia tenetur.
+					Possimus, accusamus temporibus.</p>
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<div class="tags">
+					<h6></h6>
+					<h6></h6>
+				</div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<div class="tags">
+					<h6></h6>
+					<h6></h6>
+				</div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, facilis qui accusantium obcaecati
+					voluptatibus explicabo nam neque quaerat vel doloribus?</p>
+			</div>
+			<div class="thumbnail">
+				<img src="assets/reee.JPG" alt="img">
+				<h3>Galaga</h3>
+				<div class="tags">
+					<h6></h6>
+					<h6></h6>
+				</div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, rerum.</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		$("select").on("click", function(){
+				//getting value of option
+			var filter = $(this).val();
+				//making a function to operate on *each* thumbnail
+			$(".thumbnail").each(function(index, element){
+					//getting the tags of the thumbnails
+				var tagString = $(element).attr("data-tags");
+					//prevents error because some thumbnails don't have data types
+				if(tagString){
+						//split tags by space
+					var tags = tagString.split(" ");
+					// console.log(tags);
+					if(tags.includes(filter) || filter === ""){
+						$(element).show();
+						console.log(element);
+					} else{ 
+						$(element).hide();
+					}
+					if (filter == ""){
+						$(element).show()
+					};
+				};
+			});
+		});
+	</script>
+</body>
+
+</html>
