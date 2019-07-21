@@ -10,8 +10,8 @@
         }
         #machine {
             background: linear-gradient(to top left, purple, black, blue);
-            width: 1000px;
-            height: 800px;
+            width: 70%;
+            height: 100%;
             position: relative;
             top: -8px;
             left: -8px;
@@ -39,7 +39,7 @@
         }
         #game {
             width: 100%;
-            height: 450px;
+            height: 650px;
         }
         #console {
             width: 90%;
@@ -53,37 +53,39 @@
             width: 100%;
         }
         #controls {
-            transform: translate(-290px, -230px);
+            /* transform: translate(-290px, -230px); */
         }
         #off {
-            transform: translate(-175px, -268px);
+            /* transform: translate(-175px, -268px); */
         }
         #leader {
-            transform: translate(-40px, -305px);
+            /* transform: translate(-40px, -305px); */
         }
         #arcade {
-            transform: translate(220px, -360px);
+            /* transform: translate(220px, -360px); */
         }
         #home {
-            transform: translate(540px, -280px);
+
+            /* transform: translate(540px, -280px); */
             width: 100px;
         }
         #bar {
-            transform: translate(240px, -340px);
+            /* transform: translate(240px, -340px); */
         }
         .joystick {
-            width: 50px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
 		    cursor: pointer;
+            border-radius: 100px;
         }
         #ctrlbtn {
-            transform: translate(190px, -460px);
+            /* transform: translate(190px, -460px); */
         }
         #offbtn {
-            transform: translate(192px, -460px);
+            /* transform: translate(192px, -460px); */
         }
         #ldrbtn {
-            transform: translate(195px, -460px);
+            /* transform: translate(195px, -460px); */
         }
         .innerbtn {
             width: 35px;
@@ -92,17 +94,28 @@
     		cursor: pointer;
         }
         #rcdbtn {
-            transform: translate(477px, -490px);
+            /* transform: translate(477px, -490px); */
         }
         #hmbtn {
-            transform: translate(372px, -450px);
+            /* transform: translate(372px, -450px); */
         }
         #brbtn {
-            transform: translate(426px, -435px);
+            /* transform: translate(426px, -435px); */
             width: 45px;
             height: 45px;
         }
-        button:focus {outline:0;}
+        td {
+            width: 130px;
+            text-align: center;
+        }
+        #nav {
+            border: white solid;
+            border-radius: 100px;
+            width: 150px;
+            text-align: center;
+            transform: translate(350%, -90%) rotate(-30deg);
+            
+        }
     </style>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
 </head>
@@ -116,18 +129,27 @@
             <img src="assets/reee.JPG" alt="reee" id="game">
         </div>
         <div id="console">
-            <img src="assets/console.png" alt="the console is supposed to be here, fix it." id="buttons">
-                <h4 id="controls">CONTROLS</h4>
-                <h4 id="off">OFF</h4>
-                <h4 id="leader">LEADERBOARD</h4>
+            <table id="joystick-div">
+                <tr>
+                    <td><h4 id="controls">CONTROLS</h4></td>
+                    <td><h4 id="off">OFF</h4></td>
+                    <td><h4 id="leader">LEADERBOARD</h4></td>
+                </tr>
+                <tr>
+                    <td><button class="joystick" id="ctrlbtn" onclick="ctrl()"></button></td>
+                    <td><button class="joystick" id="offbtn" onclick="off()"></button></td>
+                    <td><button class="joystick" id="ldrbtn" onclick="leader()"></button></td>
+                </tr>
+            </table>
+            <div id="nav">
+                <button class="innerbtn" id="rcdbtn" onclick="arcade()"></button>
+                <button class="innerbtn" id="hmbtn" onclick="home()"></button>
+            </div>
                 <h4 id="arcade">ARCADE</h4>
                 <h4 id="home">HOME PAGE</h4>
                 <h4 id="bar">BAR</h4>
-            <button class="joystick" id="ctrlbtn" onclick="ctrl()"></button>
-            <button class="joystick" id="offbtn" onclick="off()"></button>
-            <button class="joystick" id="ldrbtn" onclick="leader()"></button>
-            <button class="innerbtn" id="rcdbtn" onclick="arcade()"></button>
-            <button class="innerbtn" id="hmbtn" onclick="home()"></button>
+            
+            
             <button class="innerbtn" id="brbtn" onclick="bar()"></button>
         </div>
     </div>

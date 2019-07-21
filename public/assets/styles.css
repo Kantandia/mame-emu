@@ -2,7 +2,7 @@
   line-height: 2.5;
 }
 html {
-  background: url("reee.jpg") no-repeat center center fixed; 
+  background: url("background-image.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,3 +36,4 @@ p, h1, h2, h3, h4, h5, h6 {
   font-family: "80s";
   font-size: 25px;
 }
+button:focus {outline:0;}
