@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "80s";
+  src: url("PressStart2P.ttf");
+  font-weight: normal;
+}
+#home {
+  background: black;
+}
+
+.heading {
+  font-family: "80s";
+  color: white;
+}
+
+.card-title {
+  color: white;
+}
+
+.card-body {
+  background-image: linear-gradient(to top left, purple, black, blue);
+}
+
+.img-card {
+  background: black
+}
+
+.list-group {
+  color: black;
+}
+
+.card-title {
+  font-family: fantasy;
+}
+
+.card-text {
+  color:rgb(177, 177, 177);
+  font-family: fantasy;
+  font-size: 18px;
+}
+
+#order-heading {
+  color: white;
+}
+
+
