@@ -5,6 +5,10 @@ module.exports = function(app) {
     res.render("home");
   });
 
+  app.get("/arcade", function(req, res) {
+    res.render("arcade");
+  });
+
   // Load index page
   app.get("/drinksPage", function(req, res) {
     db.Drink.findAll({}).then(function(dbDrinks) {
