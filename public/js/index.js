@@ -51,7 +51,7 @@ var refreshDrinks = function() {
 
       var $button = $("<button>")
         .addClass("btn btn-danger float-right delete")
-        .text("ｘ");
+        .text("Cancel Order");
 
       $li.append($button);
 
