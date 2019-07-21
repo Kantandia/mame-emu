@@ -2,7 +2,7 @@
   line-height: 2.5;
 }
 html {
-  background: url("background-image.jpg") no-repeat center center fixed; 
+  background: url("background-image.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -37,4 +37,3 @@ p, h1, h3, h4, h5 {
   font-size: 25px;
 }
 button:focus {outline:0;}
-
