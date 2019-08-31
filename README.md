@@ -1,34 +1,22 @@
-# Project-2-Starter
-A repository for starting project 2
-- [X] Copy this template
+# Luffy's Bar
 
-### Once you have copied this template do the following
-- [ ] Invite all collaborators
-- [ ] Create a slack channel and invite all the team members and the instructional staff
-- [ ] Protect the master branch
-- [ ] Set up a pipeline with heroku with a staging environment and a production environment
-- [ ] Setup the staging app to deploy the master branch automatically
-- [ ] Modify this README to include 
-  - [ ] each of your team members names and links to their github profiles
-  - [ ] the title of your project
-  - [ ] a link to your production deployed version
-  
-#### Requirements for the project
-  
-- [ ] Must use a Node and Express Web Server
+## Web Based Application for Arcade Gaming Centers
 
-- [ ] Must be backed by a MySQL Database with a Sequelize ORM  
+* An application that allows customers at arcade gaming centers to place orders for drinks within the gaming system.
 
-- [ ] Must have both GET and POST routes for retrieving and adding new data
+* Used Node and Express to handle GET and POST requests between the client and server.
 
-- [ ] Must be deployed using Heroku (with Data)
+* Used Sequelize ORM, to perform CRUD operations on the database.
 
-- [ ] Must utilize at least one new library, package, or technology that we haven’t discussed
+## Here's how the app works:
 
-- [ ] Must have a polished frontend / UI 
+* The customer can order for his favorite drinks in the bar page where all the luffy's bar special drinks are displayed.
 
-- [ ] Must have folder structure that meets MVC Paradigm
+* The customer can view the drinks selected and the quantity and can cancel the order if required.
 
-- [ ] Must meet good quality coding standards (indentation, scoping, naming)
+* Technologies Used: Node.js, Express.js, MySQL, Handlebars, Bootstrap.
 
-- [ ] Must not expose sensitive API key information on the server
+## Contributed and Maintained by:
+
+Taylor, Anthony, Daniel, Sharath, Joseph.
+
